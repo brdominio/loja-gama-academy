@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;            
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    background-color: #eee;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}        
+.flex {
+    display: flex;
+}
+header img.logo {
+    margin: 0 20px;
+}
+header div {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header div ul {
+    justify-content: center;
+}
+header div ul li {
+    margin: 0 5px;
+}
+nav#menu-principal {
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width: 460px) {
+    header div {
+        justify-content: flex-start; 
+    }
+    header a {
+        margin: 0 auto;
+    }
+    header ul {
+        margin: 10px auto;
+    }
+}
+
+
+/* MENU */
+@media (min-width: 991px) {
+    #menu-principal div {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }    
+    .list-menu {
+        display: flex!important;
+        justify-content: space-between;
+        width: 100%;
+        box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+    }
+    .item-menu {
+        flex: auto;
+    }
+    .item-menu a {
+        padding: 15px;
+        color: #fff;
+        display: block;
+        transition: .4s;
+        cursor: pointer;
+        text-align: center
+    }
+    .item-menu a:hover {
+        background: #666;
+        color: #fff;
+    }
+    .navegacao-mobile {
+        display: none!important;
+    }                
+}
+.navegacao-mobile {
+    background: #000;
+    padding: 10px;
+    display: block;
+    width: 53px;
+    cursor: pointer;
+}
+.linha-menu {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 4px;
+    background-color: #fff;
+    display: block;
+}
+.input-menu-all {
+    display: none!important;
+}
+.list-menu {
+    display: none;
+    width: 100%;
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+}
+.item-menu {
+    flex: auto;
+}
+.item-menu a {
+    padding: 15px;
+    color: #fff;
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center
+}
+.input-menu-all:checked ~ .list-menu {
+    display: block;
+}
+.input-menu-all:checked ~ .list-menu a  {
+    text-align: left;
+}        
+/* CONTEUDO */
+main .banner {
+    background-color: rgb(248, 248, 248);
+}
+main .banner img {
+    width: 100%;
+}
+main .apresentacao {
+    padding: 20px;
+}
+main h1, h2 {
+    margin: 0 auto;
+    text-align: center;
+}
+main .apresentacao .nova-linha {
+    margin-top: 30px;
+    align-items: center;
+}
+@media (max-width: 700px) {
+    main .apresentacao .nova-linha {
+        flex-wrap: wrap;
+    }
+}
+main .apresentacao .nova-linha img {
+    margin: 0 auto;
+}
+main .apresentacao .nova-linha p {
+    padding: 20px;
+    margin: 0 auto;
+}
+main .apresentacao h2 {
+    margin-top: 30px;
+}
+main .produtos .linha-produto {
+    align-items: center;
+    border-bottom: solid 1px #eee;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+main .produtos .linha-produto img {
+    width: 360px;
+    flex: 1;
+}
+main .produtos .linha-produto .descricao {
+    padding: 15px;
+    flex: 1;
+}
+main .produtos .linha-produto a.botao-desconto {
+    background-color: #fc0;
+    padding: 10px;
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    color: #000;
+    margin-top: 10px;
+    font-weight: bold;
+}        
+@media (max-width: 564px) {
+    main .produtos .linha-produto a.botao-desconto {
+        margin: 15px auto;
+    }
+    .inverter-ordem {
+        flex-direction: column-reverse;
+    }
+}
+.desconto-exclusivo {
+    background-color: #000;            
+    color: #fff;
+    text-align: center;
+}
+.desconto-exclusivo .container {
+    padding: 50px 30px;
+}
+.desconto-exclusivo h2 {
+    color: #fff;
+}
+.desconto-exclusivo input, .desconto-exclusivo button {
+    padding: 15px;
+    margin-top: 15px;
+}
+.desconto-exclusivo button {
+    background-color: #fc0;
+}
+footer {
+    background-color: #ddd;
+}
+footer p {
+    padding: 30px;
+    text-align: center;
+}
